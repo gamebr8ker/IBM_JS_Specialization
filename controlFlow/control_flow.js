@@ -62,3 +62,38 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
 
 console.log("Authentication Status: ", authenticationStatus);
+
+
+
+
+
+// Practice Task 
+// Provides access to people based on their role in the org.
+
+// Test 1 role at a time, via humanRole
+let humanRole = "Employee";
+let humanService;
+let serviceLevels = {
+    "Employee": "Dietary Services",
+    "Enrolled Member": ["Dietary Services", "Interaction"],
+    "Subscriber": "Dietary Services (Partial)",
+    "Non-Subscriber": "No services"
+}
+//console.log(serviceLevels);
+
+humanService = serviceLevels[humanRole];
+console.log(humanService);
+
+
+
+
+
+// (Alternative) Test all of the roles...
+// Uses serviceLevels from above
+let allHumans = ["Employee", "Enrolled Member", "Subscriber", "Non-Subscriber"];
+
+for (let human = 0; human < allHumans.length; human++) {
+    let humanRoleSub = allHumans[human]
+    let humanServiceSub = serviceLevels[humanRoleSub]
+    console.log("Role: ", humanRoleSub, "\n", "Service: ", humanServiceSub);
+}
