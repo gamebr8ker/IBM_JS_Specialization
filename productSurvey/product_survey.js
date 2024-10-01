@@ -7,6 +7,7 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const experience = document.getElementById('userExperienceText').value;
 
 
     // Update the elements with the variables collected above...
@@ -17,8 +18,9 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userExperience').innerHTML = experience;
 
-
+    
     // Display the div element at line 29 in HTML...
     document.getElementById('userInfo').style.display = 'block';
 
