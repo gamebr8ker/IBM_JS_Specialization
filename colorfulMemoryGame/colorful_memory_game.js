@@ -117,7 +117,7 @@ function startGame() {
 
 
 // Manages the game timer
-function startGameTime(timeLeft) {
+function startGameTimer(timeLeft) {
     timerElement.textContent = `Time Left: ${timeLeft}`;
     
     // initiate an interval that triggers the function every 1000 ms (1 sec)
